@@ -6,11 +6,11 @@ Official Website of Bits2Bytes 2018, the annual technical festival of Bengal Ins
 This web application was developed for Bits2Bytes 2018, the annual technical festival of Bengal Institute of Technology. It served the purpose of the centralized point of information regarding the fest and also for event registrations.
 
 
-### Prerequisites
+## Prerequisites
 This application requires the installation of Apache, MySQL and PHP on your local machine.
 
 
-### Installing
+## Installing
 To run this application on your local machine, follow the steps given below:
 ```
 1. Clone this repository.
