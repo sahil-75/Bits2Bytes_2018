@@ -51,4 +51,4 @@ Special thanks to the following:
 * [Roberts Space Industries Website](https://robertsspaceindustries.com/starmap/) for the design inspiration
 * [Shubhajit Chatterjee](https://github.com/shubhajit01) for the amazing posters and miscellaneous graphic designs
 * [Vishwang Dave](https://github.com/seraph-wing) for writing the immersive storyline of Bits2Bytes Galaxy
-* Finally all the photographers, whose amazing pictures were used in the website
+* And, all the photographers, whose amazing pictures were used in the website
