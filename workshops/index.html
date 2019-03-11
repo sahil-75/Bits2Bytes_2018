@@ -1,0 +1,146 @@
+<!--Developed by SAHIL G. KALYANI-->
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Official Website of Bits2Bytes 2018">
+        <meta name="author" content="Sahil Kalyani">
+
+        <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        
+        <title>Bits2Bytes 2018</title>
+        <style>
+            *
+            {
+                margin: 0;
+                padding: 0;
+            }
+            .image
+            {
+                width: 100%;
+                padding: 5%;
+                box-sizing: border-box;
+                cursor: pointer;
+            }
+            .totop
+            {
+                position: fixed;
+                bottom: 15px;
+                right: 15px;
+                cursor: pointer;
+                transition: all 0s ease;
+            }
+            .totoptip
+            {
+                visibility: hidden;
+                background: white;
+                color: black;
+                font-weight: bold;
+                font-size: 1.2em;
+                margin-right: 10px;
+                margin-top: 7px;
+                padding: 12px;
+                border-radius: 5px;
+                transition: all 0.2s ease;
+            }
+            .totop:hover .totoptip
+            {
+                visibility: visible;
+            }
+            @media (min-width: 768px)
+            {
+                .modal-dialog
+                {
+                    width: 50% !important;
+                }
+            }
+        </style>
+    </head>
+    
+    <body style="background: #1f222b">
+        <h1 style="text-align: center; padding: 25px; font-size: 2.7em; font-family: arial; color: #85c318"><img src="../logo.png" style="width: 70px; margin: -1.2% 25px; vertical-align: center; background: white; border-radius: 100%; padding: 3px">Bits2Bytes 2018 - Workshop Registration</h1>
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4" onclick="fun1('Making Responsive Websites Using Bootstrap Framework', 'post1.png', 'bs.pdf', 'As this is a free workshop and there are limited number of seats, the seats will be filled by first-come-first-serve basis.', 'College ID is mandatory on the day of workshop, as this workshop is open for students of BIT only.')">
+                    <img src="post1.png" class="image">
+                </div>
+                <div class="col-md-4" onclick="fun1('Introduction to Python', 'post2.png', 'py.pdf', 'Pay the workshop fee of Rs 150 per head in the college premises from 8-10 January 2018 to confirm your seat.', 'Bring your Payment Receipt and college ID card on the day of workshop to attend the workshop.')">
+                    <img src="post2.png" class="image">
+                </div>
+                <div class="col-md-4" onclick="fun1('Techniques on PCR', 'post3.png', 'pcr.pdf', 'Pay the workshop fee of Rs 450 per head in college premises from 8-10 January 2018 to confirm your seat.', 'Bring your Payment Receipt and college ID card on the day of workshop to attend the workshop.')">
+                    <img src="post3.png" class="image">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-offset-2 col-md-4" onclick="fun1('IOT-Based Arduino and Raspberry Pi', 'post4.png', 'iot.pdf', 'Pay the workshop fee of Rs 2500 per group in college premises from 8-10 January 2018 to confirm your seat. All group members should be registered online to form a group on the day of fee payment', 'Bring your Payment Receipt and college ID card on the day of workshop to attend the workshop.')">
+                    <img src="post4.png" class="image">
+                </div>
+                <div class="col-md-4" onclick="fun1('Quad-X and AeroStorm', 'post5.png', '', 'You will need to pay the workshop fee in the college premises on the given dates. Workshop Dates, Fee payment dates and Workshop Fee will be announced soon.', 'Team Bits2Bytes will contact you on your registered email id and phone number for further updates.')">
+                    <img src="post5.png" class="image">
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal" id="mymodal" role="dialog">
+           <div class="modal-dialog">
+              <div class="modal-content" style="width: 100%; margin: 0 auto; background: #1f222b; border: solid 1px white">
+                <div class="modal-header" style="color: black">
+                  <button type="btn" class="close" id="closebtn" data-dismiss="modal" style="color: white !important; opacity: 1;">&times;</button>
+                  <h2 id="title" style="color: white; text-align: center; margin: 0">TITLE</h2>
+                </div>
+
+                <div class="modal-body">
+                  <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8">
+                       <img src="" id="image" width="100%">
+                    </div>
+                    <div class="col-md-2"></div>
+                  </div>
+                  <h3 style="text-align: left; margin: 10px 10px 10px 20px; padding: 0; font-weight: normal; font-size: 2em; color: white">Registration Procedure:</h3>
+                  <ol style="margin-left: 2em; color: white !important; font-size: 1.2em">
+                      <li id="r1">Fill the online Registration form.</li>
+                      <li id="r2"></li>
+                      <li id="r3"></li>
+                  </ol>
+                </div>
+
+                <div class="modal-footer" style="padding-left: 5%; padding-right: 5%;">
+                  <a target="_blank" id="doc" class="btn" style="background: white; color: #101010; opacity: 1; font-size: 16px; float: left">Workshop FAQs</a>
+                  <a onclick="alert('Registrations Closed');" class="btn" style="background: white; color: #101010; opacity: 1; font-size: 16px" disabled>Register</a>
+                </div>
+              </div>
+            </div>
+        </div>
+        
+        <script>
+            function fun1(x,y,z,r2,r3)
+            {
+                document.getElementById('title').innerHTML = x;
+                document.getElementById('image').src = y;
+                document.getElementById('doc').href = z;
+                document.getElementById('r2').innerHTML = r2;
+                document.getElementById('r3').innerHTML = r3;
+                if(z=='')
+                    document.getElementById('doc').target="";
+                $('#mymodal').modal('hide');
+                $('#mymodal').modal({backdrop: 'static', keyboard: false})
+            }
+        </script>
+    </body>
+</html>
+
+<!--Developed by SAHIL G. KALYANI and SHUBHAM GUPTA-->
